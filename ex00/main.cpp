@@ -2,18 +2,14 @@
 #include "Victim.hpp"
 #include "Peon.hpp"
 
-int main(void)
+int main() 
 {
-	Sorcerer 	a("titi", "Mage");
-	Sorcerer 	*b = new Sorcerer("toto", "Novice");
-	Victim		c("Roger");
-	Peon		d("Thrall");
+    Sorcerer robert("Robert", "the Magnificent");
+    Victim jim("Jimmy");
+	Peon joe("Joe");
 
-	std::cout << a << std::endl;
-	std::cout << *b << std::endl;
-	std::cout << c << std::endl;
-	delete b;
-	a.polymorph(c);
-	a.polymorph(d);
-	return (0);
+	std::cout << robert << jim << joe;
+	robert.polymorph(jim);
+	robert.polymorph(joe);
+	return 0; 
 }
